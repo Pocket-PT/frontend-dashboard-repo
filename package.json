@@ -9,19 +9,40 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.4.3",
+    "@tanstack/react-query-next-experimental": "^5.5.0",
+    "antd": "^5.10.3",
+    "apexcharts": "^3.44.0",
+    "axios": "^1.6.0",
+    "dayjs": "^1.11.10",
+    "next": "14.0.1",
     "react": "^18",
+    "react-apexcharts": "^1.4.1",
     "react-dom": "^18",
-    "next": "14.0.1"
+    "react-query": "^3.39.3",
+    "react-slick": "^0.29.0",
+    "swiper": "^11.0.3",
+    "use-dehydrated-state": "^0.1.0",
+    "zustand": "^4.3.9"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-slick": "^0.23.12",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
+    "@typescript-eslint/parser": "^6.9.1",
     "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.1",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-webpack-plugin": "^4.0.1",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.1"
+    "typescript": "^5"
   }
 }

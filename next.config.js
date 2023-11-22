@@ -1,4 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  reactStrictMode: true,
+  images: {
+    domains: ['pocket-pt.s3.ap-northeast-2.amazonaws.com'],
+  },
+  output: 'export',
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
