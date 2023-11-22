@@ -67,7 +67,9 @@ const columns: ColumnsType<DataType> = [
       multiple: 1,
     },
     render: (process: number) => {
-      return <span>{process}%</span>;
+      return (
+        <span>{0 <= process && process <= 100 ? `${process}%` : null}</span>
+      );
     },
   },
   {

@@ -8,7 +8,7 @@ const AfterLogin = () => {
   const { setToken } = useTokenStore();
   const searchParams = useSearchParams();
   const accessToken = searchParams.get('accessToken');
-  console.log('accessToken: ', accessToken);
+
   useEffect(() => {
     if (accessToken) {
       setToken(accessToken);

@@ -26,6 +26,7 @@ export default function MembersPage() {
             (a, b) =>
               statusOrder.indexOf(a.status) - statusOrder.indexOf(b.status),
           )
+          .filter((v) => v.name !== '탈퇴한 회원')
           .map((member) => {
             return {
               ...member,
@@ -53,7 +54,6 @@ export default function MembersPage() {
     });
     setDataSource(filteredData);
   };
-  //`calc(100vh - ${refHeights[0]}px - ${refHeights[1]}px - 11rem)`
 
   return (
     <div className="h-full overflow-hidden flex flex-col gap-4">

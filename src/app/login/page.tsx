@@ -4,6 +4,7 @@ import Image from 'next/image';
 //https://pocketpt.netlify.app
 //http://localhost:3000
 //http://pocketpt-frontend.s3-website.ap-northeast-2.amazonaws.com
+//https://dashboard.pocketpt.me
 const LoginPage = () => {
   return (
     <div className=" bg-gray-200 w-full h-full py-[13vh]">
@@ -20,7 +21,7 @@ const LoginPage = () => {
           <div className="hover:cursor-pointer w-full flex justify-center">
             <a
               href={`${SERVER_URL}/oauth2/authorization/kakao?redirectUri=${encodeURIComponent(
-                'http://localhost:3000/login/after-login',
+                'https://dashboard.pocketpt.me/login/after-login',
               )}`}
             >
               <svg
