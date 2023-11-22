@@ -4,7 +4,6 @@ const nextConfig = {
   images: {
     domains: ['pocket-pt.s3.ap-northeast-2.amazonaws.com'],
   },
-  output: 'export',
 };
 
 module.exports = nextConfig;
