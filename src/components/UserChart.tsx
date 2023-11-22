@@ -1,6 +1,10 @@
 'use client';
 
-import ApexCharts from 'react-apexcharts';
+import dynamic from 'next/dynamic';
+
+const DynamicApexCharts = dynamic(() => import('react-apexcharts'), {
+  ssr: false,
+});
 
 type UserChartProps = {
   name: string;
@@ -34,7 +38,7 @@ const UserChart = ({ name, isDownLoad }: UserChartProps) => {
   ];
   return (
     <div className="w-full h-full">
-      <ApexCharts
+      <DynamicApexCharts
         options={options}
         series={series}
         type="radar"
